@@ -1,0 +1,7 @@
+p = generateProblem(703);
+options = struct();
+options.qnType = 0;
+options.optTol = 1e-4;
+options.optTolMinF = 1; % e-5;
+[x,r,g,data] = solve_rootfinding_v04(p.A,p.b,1e-3*norm(p.b,2),options);
+

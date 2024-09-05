@@ -1,0 +1,4 @@
+p = generateProblem(703);
+options = struct();
+[x,r,g,info] = spgl1(p.A,p.b,[],0.001*norm(p.b,2),[],options);
+
